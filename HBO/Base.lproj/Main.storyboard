@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Sign In"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sL7-9v-W1j">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sL7-9v-W1j" userLabel="txtfieldEmail">
                                 <rect key="frame" x="10" y="363" width="400" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="J8K-Hl-17X"/>
@@ -65,6 +65,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="FAA-d9-4wg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="1vI-TT-9p4"/>
                             <constraint firstItem="ZQs-N5-L2e" firstAttribute="top" secondItem="sL7-9v-W1j" secondAttribute="bottom" constant="10" id="Fbq-QV-mWI"/>
                             <constraint firstItem="yPG-aF-KTZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="Gbj-PP-CxL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZQs-N5-L2e" secondAttribute="trailing" constant="10" id="JXv-Tp-o2a"/>
@@ -74,6 +75,7 @@
                             <constraint firstItem="UR8-Az-PMd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="RNF-uF-ptd"/>
                             <constraint firstItem="QEm-RJ-9cO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wyg-g6-6Ab"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UR8-Az-PMd" secondAttribute="trailing" constant="90" id="XHo-0U-y7B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FAA-d9-4wg" secondAttribute="trailing" constant="10" id="bbG-xU-6zN"/>
                             <constraint firstItem="UR8-Az-PMd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dox-EO-SYG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sL7-9v-W1j" secondAttribute="trailing" constant="10" id="eHI-DS-RDA"/>
                             <constraint firstItem="ZQs-N5-L2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f01-SB-qNC"/>
@@ -86,6 +88,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="signinButton" destination="FAA-d9-4wg" id="cHB-DT-fdt"/>
+                        <outlet property="txtfieldEmail" destination="sL7-9v-W1j" id="pEP-z9-r3D"/>
+                        <outlet property="txtfieldPassword" destination="ZQs-N5-L2e" id="ZSR-il-hgW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
